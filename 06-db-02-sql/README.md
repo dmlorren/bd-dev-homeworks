@@ -106,7 +106,7 @@ psql -h 127.0.0.1 -U dmlorren -d test_db
 
 1. База данных у нас уже создана, теперь согласно ТЗ создадим нового пользователя.
 ```sql
-test_db=# CREATE USER "test-admin-user";
+CREATE USER "test-admin-user";
 ```
 ![user](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/user.png)
 

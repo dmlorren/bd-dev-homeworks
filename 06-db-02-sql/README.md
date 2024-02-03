@@ -68,7 +68,7 @@ services:
 docker exec -it bee47eff6ae8 bash
 psql -h 127.0.0.1 -U dmlorren -d test_db
 ```
-![test_db](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/blob/main/06-db-02-sql/img/test_db.png)
+![test_db](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/test_db.png)
 
 
 ## Задача 2
@@ -108,7 +108,7 @@ psql -h 127.0.0.1 -U dmlorren -d test_db
 ```sql
 test_db=# CREATE USER "test-admin-user";
 ```
-![user](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/main/06-db-02-sql/img/user.png)
+![user](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/user.png)
 
 2. Создаём таблицу orders.
 ```sql
@@ -135,7 +135,7 @@ CREATE TABLE clients (
 ```sql
 GRANT ALL PRIVILEGES ON TABLE orders, clients to "test-admin-user";
 ```
-![table](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/main/06-db-02-sql/img/table.png)
+![table](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/table.png)
 
 2.3 Создаём пользователя test-simple-user:
 ```sql
@@ -149,10 +149,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE orders, clients to "test-simple-us
 
 `Итоги:`
 - итоговый список БД после выполнения пунктов выше:
-![l+](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/main/06-db-02-sql/img/l+.png)
+![l+](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/l%2B.png)
 
 - описание таблиц (describe):
-![tables](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/main/06-db-02-sql/img/tables.png)
+![tables](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/tables.png)
 
 - SQL-запрос для выдачи списка пользователей с правами над таблицами test_db:
 ```sql
@@ -167,7 +167,7 @@ order by
     grantee;
 ```
 - список пользователей с правами над таблицами test_db:
-![grantee](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/main/06-db-02-sql/img/grantee.png)
+![grantee](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-02-sql/img/grantee.png)
 
 
 

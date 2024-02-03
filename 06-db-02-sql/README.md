@@ -61,14 +61,14 @@ services:
       POSTGRES_DB: "test_db"  
 
 ```
-![docker_ps](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/06-db-02-sql/img/docker_ps.png)
+![docker_ps](https://github.com/dmlorren/netology-homework/blob/main/06-db-02-sql/img/docker_ps.png)
 
 4. Заходим докер-контейнрер, а затем в БД test_db (так как уже создали):
 ```
 docker exec -it bee47eff6ae8 bash
 psql -h 127.0.0.1 -U dmlorren -d test_db
 ```
-![test_db](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/main/06-db-02-sql/img/test_db.png)
+![test_db](https://github.com/dmlorren/netology-homework/bd-dev-homeworks/blob/main/06-db-02-sql/img/test_db.png)
 
 
 ## Задача 2

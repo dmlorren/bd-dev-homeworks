@@ -69,7 +69,7 @@ services:
 docker-compose up -d
 docker ps -a
 ``` 
-![docker_ps](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-03-mysql/img/docker_ps.png)
+![docker_ps](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-04-psql/img/docker_ps.png)
 
 5. Заходим в контейнер, подключаемся к БД postgres, выполянем управляющий команды:
 ``` 
@@ -82,7 +82,7 @@ psql -h 127.0.0.1 -U admin
 show * from table_name;
 \q
 ``` 
-![psql_bd](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-03-mysql/img/psql_bd.png)
+![psql_bd](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-04-psql/img/psql_bd.png)
 
 
 ## Задача 2
@@ -304,7 +304,7 @@ where price <= 499;
 select * from orders_1;
 select * from orders_2;
 ```
-![shard](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-03-mysql/img/shard.png)
+![shard](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-04-psql/img/shard.png)
 - в оригинальной таблице содержится 8 строк, на скриншоте видим, что всё шардировано верно, 3 строки в orders_1 и 5 строк в orders_2
 
 3. Так как в задании жалобы на разросшеюся таблицу, то старую можно удалить:

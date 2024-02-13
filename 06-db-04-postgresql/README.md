@@ -71,7 +71,7 @@ docker ps -a
 ``` 
 ![docker_ps](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-04-postgresql/img/docker_ps.png)
 
-5. Заходим в контейнер, подключаемся к БД postgres, выполянем управляющий команды:
+5. Заходим в контейнер, подключаемся к БД postgres, выполняем управляющий команды:
 ``` 
 docker exec -it c9f90f0ae11d bash
 psql -h 127.0.0.1 -U admin
@@ -82,7 +82,7 @@ psql -h 127.0.0.1 -U admin
 show * from table_name;
 \q
 ``` 
-![psql_bd](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-04-psql/img/psql_bd.png)
+![psql_bd](https://github.com/dmlorren/bd-dev-homeworks/blob/main/06-db-04-postgresql/img/psql_bd.png)
 
 
 ## Задача 2
@@ -234,11 +234,12 @@ test_database=# select * from orders;
 ### Решение задания 3
 
 1. Сделаем всё в 4 итерации:
+``` 
 1.1 создадм таблицу orders_1;
 1.2 создадм таблицу orders_2;
 1.3 заполним orders_1 данными из orders (оригинальной);
 1.4 заполним orders_2 данными из orders (оригинальной);
-
+``` 
 - создаём таблицы:
 ``` 
 create table orders_1 (
